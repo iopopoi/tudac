@@ -6,4 +6,7 @@ urlpatterns = [
     path('about/',views.about,name='views'),
     path('contact/',views.contact,name='contact'),
     path('events/',views.events,name='events'),
+
+    #test, after delete
+    path('test/<int:x>',views.test,name='test'),
 ]
