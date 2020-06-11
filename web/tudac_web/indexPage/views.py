@@ -7,6 +7,9 @@ except ImportError:
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.http import require_POST
+from django.http import HttpResponse
+from indexPage.models import Map_DB
+import sqlite3
 
 
 def index(request):
@@ -26,10 +29,12 @@ def about(request):
 
 
 # test, after delete
-def test(request, *args, **kwargs):
-    if(kwargs['x']==0):
-        kwargs = {'Lat':36.515694,'Lng':127.877974,'Zoom':6}
-    else:
-        kwargs = {'Lat':36.515694,'Lng':127.877974,'Zoom':7}
 
-    return render(request, 'indexPage/JungTest.html', {'Lat':kwargs['Lat'],'Lng':kwargs['Lng'],'Zoom':kwargs['Zoom']})
+def test(request):
+    return render(request, 'indexPage/Test.html')
+
+@require_POST
+def mapChange(request):
+    
+    context = {'Lat':36, 'Lng':127, 'Zoom':13}
+    return HttpResponse(json.dumps(context), content_type="application/json")

@@ -1,5 +1,7 @@
 from django.urls import path
 from . import views
+
+app_name="indexPage"
 urlpatterns = [
     path('',views.index,name='index'),
     path('sermons/',views.sermons,name='sermon'),
@@ -8,5 +10,6 @@ urlpatterns = [
     path('events/',views.events,name='events'),
 
     #test, after delete
-    path('test/<int:x>',views.test,name='test'),
+    path('test/',views.test, name="test"),
+    path('mapChange/',views.mapChange,name='mapChange'),
 ]
