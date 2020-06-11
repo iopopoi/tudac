@@ -27,10 +27,10 @@ main
 
 <br><br>
 
-### 프로젝트 참여 방법
+### 프로젝트 진행
 <hr>
 
-[wiki](https://github.com/iopopoi/tudac/wiki)를 통해 진행 상황과 각 멤버별 참여를 표시함
+[wiki](https://github.com/iopopoi/tudac/wiki)를 통해 진행 상황과 각 멤버별 활동 기록
 
 
 
