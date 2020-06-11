@@ -1,1 +1,10 @@
+<<<<<<< HEAD
 PASSWORD.py
+=======
+.DS_Store
+PASSWORD.py
+JungTest.html
+__pycache__/
+*.pyc
+request.html
+>>>>>>> 5166ae50d0496db4d17ca245d4f66b60a0f1d61a
