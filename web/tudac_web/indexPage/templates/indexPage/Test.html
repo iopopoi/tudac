@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-    <title>간단한 지도 표시하기</title>
-
+    <title>테스트</title>
+    <style>
+      .f{font-size:30px;}
+    </style>
 
     <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ng6xz547b0"></script>
 
-g
 </head>
 <body>
 <div id="map" style="width:400px;height:400px;"></div>
-
-<button class="like" name="abcd" type="button" style="width:400px"><p style="font-size: 20px;">어여쁜 버튼 *P*</p></button>
+<button class="like" name="butt" type="button" style="width:400px"><p style="font-size: 20px;">어여쁜 버튼 *P*</p></button>
+<p class="region f">Region : </p>
+<p class="name f">Name : </p>
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript">
@@ -27,7 +29,8 @@ g
         if(marker){
           var marker = new naver.maps.Marker({
             position: new naver.maps.LatLng(Lat,Lng),
-            map:map
+            map:map,
+            animation: naver.maps.Animation.DROP
           });
         }
     }
@@ -43,6 +46,8 @@ g
       // 서버측에서 전송한 Response 데이터 형식 (json)
       success: function(response){ // 통신 성공시 
         Map(response.Lat,response.Lng,response.Zoom,true);
+        $(".region").text("Region : "+response.Region);
+        $(".name").text("name : "+response.Name);
       },
       error: function(request, status, error){ // 통신 실패시
         alert("접속에 실패했습니다. 다시 시도해주세요.");

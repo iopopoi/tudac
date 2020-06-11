@@ -8,9 +8,8 @@ from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.http import require_POST
 from django.http import HttpResponse
-from indexPage.models import Map_DB
-import sqlite3
-
+from .models import Map_DB
+import random
 
 def index(request):
     return render(request,'indexPage/index.html')
@@ -35,6 +34,8 @@ def test(request):
 
 @require_POST
 def mapChange(request):
-    
-    context = {'Lat':36, 'Lng':127, 'Zoom':13}
+    index = random.randrange(1,Map_DB.objects.count()+1)
+    liste = Map_DB.objects.get(pk=index)
+    context = {'Region':liste.region, 'Name':liste.name.replace('#',' '), 'Lat':float(str(liste.latitude)), 'Lng':float(str(liste.longitude)), 'Zoom':17}
+    print(index,context["Region"],context["Name"],context["Lat"],context["Lng"])
     return HttpResponse(json.dumps(context), content_type="application/json")
