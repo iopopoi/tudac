@@ -17,13 +17,13 @@
 </head>
 <body>
 
-  <!--네이버 맵 // 필수요소 : id=map -->
+  <!--네이버 맵 div // 필수요소 : id=map -->
   <div id="map" style="width:400px;height:400px;"></div>
 
   <!--버튼 // 필수요소 : class="map_btn" name="butt" -->
   <button class="map_btn" name="butt" type="button" style="width:400px"><p style="font-size: 20px;">어여쁜 버튼 *P*</p></button>
 
-  <!--지역 이름과, 장소 이름  필수요소 : 각각 class=region, class=name   태그는 상관없음-->
+  <!--지역 이름과, 장소 이름 태그 상관 없음 필수요소 : 각각 class=region, class=name-->
   <br>
   <p class="f" style="display:inline">Region : </p><p class="region f" style="display:inline"></p><br>
   <p class="f" style="display:inline">Name : </p><p class="name f" style="display:inline"></p><br><br>
@@ -47,18 +47,17 @@
       }
     $(".map_btn").click(function(){
       var pk = $(this).attr('name')
-      $.ajax({ // .like 버튼을 클릭하면 새로고침 없이 ajax로 서버와 통신
-        type: "POST", // 데이터를 전송하는 방법을 지정
-        url: "{% url 'indexPage:mapChange' %}", // 통신할 url을 지정
-        data: {'pk': pk, 'csrfmiddlewaretoken': '{{ csrf_token }}'}, // 서버로 데이터 전송시 옵션
-        dataType: "json", // 서버측에서 전송한 데이터를 어떤 형식의 데이터로서 해석할 것인가를 지정, 없으면 알아서 판단
-        // 서버측에서 전송한 Response 데이터 형식 (json)
-        success: function(response){ // 통신 성공시 
+      $.ajax({
+        type: "POST",
+        url: "{% url 'indexPage:mapChange' %}", 
+        data: {'pk': pk, 'csrfmiddlewaretoken': '{{ csrf_token }}'}, 
+        dataType: "json", 
+        success: function(response){ 
           Map(response.Lat,response.Lng,response.Zoom,true);
           $(".region").text(response.Region);
           $(".name").text(response.Name);
         },
-        error: function(request, status, error){ // 통신 실패시
+        error: function(request, status, error){
           alert("접속에 실패했습니다. 다시 시도해주세요.");
         },
       });
