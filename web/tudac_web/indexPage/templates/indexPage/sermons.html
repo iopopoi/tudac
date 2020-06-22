@@ -16,7 +16,8 @@
     <link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="../static/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="../static/css/animate.css">
-    
+    <link rel="stylesheet" href="../static/css/extra.css">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
     
     
@@ -103,20 +104,38 @@
     
     <div class="site-section">
       <div class="container">
-        <div class="row align-items-center">
-          <div   class="col-md-12 col-lg-5 mb-5 mb-lg-0 order-1" style="border:1px solid black; height: 100px;">
-            <strong>지도 div입니다.</strong>
-          </div>
-          <div class="col-md-12 col-lg-6 mr-auto order-2">
-            <h2 class="mb-3 text-uppercase">페이지 소개 <strong class="text-black font-weight-bold">Page Introduction</strong></h2>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque accusamus, rerum illo facilis reiciendis.</p>
-            <p class="mb-4">Iste aut dolorem veritatis saepe nesciunt distinctio voluptas sapiente sunt perspiciatis autem minima, iure provident. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, quas.</p>
-            <p><a href="#" class="btn btn-primary pill px-4">Read More</a></p>
+        <div class="map_b_lo">
+          <div class="map_b_location">
+            <div class="row11">
+              <div id="map" style="width: 500px; height:500px; "></div>
+              <!-- <div class="col-md-12 col-lg-5 mb-5 mb-lg-0 order-1"id="map" style="height:500px;"></div> -->
+              <div >
+                <!-- ////////////// -->
+                <div class="b_info_div" style="height:500px; width: 500px;">
+                  <!--버튼 // 필수요소 : class="map_btn" name="butt" -->
+                  <div class="b_map">
+                    <button class="map_btn" name="butt" type="button"><p style="font-size: 20px; padding: 14px 50px 0px 50px;">어디가?</p></button>
+                  </div>
+                  <!--지역 이름과, 장소 이름 태그 상관 없음 필수요소 : 각각 class=region, class=name-->
+                  <div class="region_name_f">
+                    <div>
+                      <p style="display:inline">" </p><p class="region f" style="display:inline"></p><p style="display:inline"></p><p class="name f" style="display:inline"></p><p style="display:inline"> "</p>
+                    </div>
+                    <div>
+                      <img src="../static/images/bench.png" alt="Image" class="img-fluid">
+                    </div>
+                  </div>
+                </div>
+                <!-- //////////////// -->
+              </div>
+            
+            </div>
+            
           </div>
         </div>
       </div>
     </div>
-
+    
     
 
     <div class="py-5 quick-contact-info">
@@ -169,7 +188,10 @@
       </div>
     </footer>
   </div>
-
+  <!-- 제이쿼리 스크립트 추가 -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ng6xz547b0"></script>
+  <!--  -->
   <script src="../static/js/jquery-3.3.1.min.js"></script>
   <script src="../static/js/jquery-migrate-3.0.1.min.js"></script>
   <script src="../static/js/jquery-ui.js"></script>
@@ -206,6 +228,40 @@
                 }
             });
     </script>
+    <script type="text/javascript">
+      Map(37,127,6);
+      function Map(Lat, Lng, Zoom, marker=false){
+          var mapOptions = {
+          center: new naver.maps.LatLng(Lat,Lng),
+          zoom: Zoom
+          };
+          var map = new naver.maps.Map('map', mapOptions);
+          if(marker){
+            var marker = new naver.maps.Marker({
+              position: new naver.maps.LatLng(Lat,Lng),
+              map:map,
+              animation: naver.maps.Animation.DROP
+            });
+          }
+      }
+    $(".map_btn").click(function(){
+      var pk = $(this).attr('name')
+      $.ajax({
+        type: "POST",
+        url: "{% url 'indexPage:mapChange' %}", 
+        data: {'pk': pk, 'csrfmiddlewaretoken': '{{ csrf_token }}'}, 
+        dataType: "json", 
+        success: function(response){ 
+          Map(response.Lat,response.Lng,response.Zoom,true);
+          $(".region").text(response.Region);
+          $(".name").text(response.Name);
+        },
+        error: function(request, status, error){
+          alert("접속에 실패했습니다. 다시 시도해주세요.");
+        },
+      });
+    })
+  </script>
 
   </body>
 </html>
