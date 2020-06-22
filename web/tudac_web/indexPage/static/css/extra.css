@@ -1,0 +1,42 @@
+.region_name_f{
+    border:5px dotted rgb(92,120,147);
+    font-size: 30px;
+    height: 300px;
+    padding-top: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.row11{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.b_info_div{
+
+    /* border:5px dotted rgb(217, 255, 0); */
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.b_map{
+    /* border:5px dotted rgb(0, 0, 255); */
+}
+
+.map_b_location{
+    /* border:5px dotted rgb(255, 0, 0); */
+}
+
+.map_b_lo{
+    /* border:5px dotted rgb(0, 255, 0); */
+}
