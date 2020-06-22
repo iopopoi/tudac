@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="../static/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="../static/css/animate.css">
+    <link rel="stylesheet" href="../static/css/extra.css">
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
     
@@ -99,7 +100,7 @@
 
 
     <div class="site-section">
-      <div class="container" style ="text-align:center; font-size: 20px">
+      <div class="container" style ="text-align:center; font-size: 20px; margin-top: 200px;">
         페이지 소개<br>
         When_언제가?<br><br>
         언제가? 라는 기능은 여행이 가고 싶을 때 '언제' 놀러 가야 할지 모를 때 사용하는 기능입니다.<br>
@@ -111,10 +112,40 @@
 
     
     
-    <div class="site-section bg-light">
-      <div class="container">
-        <p> 안녕 여기는 디브야 </p>
-        <!-- 년, 월, 일 -->
+    <div class="site-section">
+      <div class="when_p1">
+        <div class="when_main">
+          <div class="when_img">
+            <div class="when_i">
+              <img src="../static/images/when_image.png" alt="" class="img-fluid" >
+            </div>
+          </div>
+          
+          <div class="when_p2">
+            <!-- 시간 표시, 태그 상관 없음, 필수요소 : id=year, id=month, id=day, id=wday -->
+            <div class="time1">
+              <p class="time" id="year">2020</p>
+              <p class="time">년</p>
+            </div>
+            <div class="time1">
+              <p class="time" id="month">00</p> 
+              <p class="time">월</p>
+            </div>
+            <div class="time1">
+              <p class="time" id="day">00</p> 
+              <p class="time">일</p>
+            </div>
+            <div class="time1">
+              <p class="time" id="wday" ></p>
+              <p class="time">요일</p>
+            </div>
+            <!--버튼, 필수요소 : class=time, name=butt-->
+            <div class="time1">
+             <button class="time" name="butt" type="button"  style="padding: 0px 10px 0px 10px;">언제가?</button>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
@@ -193,7 +224,28 @@
   <script src="../static/js/mediaelement-and-player.min.js"></script>
 
   <script src="../static/js/main.js"></script>
-    
+  
+  <!--스크립트는 html 최하단에 붙여넣어주세용 -->
+<script>
+  $(".time").click(function(){
+    var pk = $(this).attr('name')
+    $.ajax({
+      type: "POST",
+      url: "{%url 'indexPage:timeChange' %}",
+      data: {'pk':pk, 'csrfmiddlewaretoken':'{{csrf_token}}'},
+      dataType:"json",
+      success: function(response){
+        $("#year").text(response.Year);
+        $("#month").text(response.Month);
+        $("#day").text(response.Day);
+        $("#wday").text(response.Wday);
+      },
+      error: function(request,status,error){
+        alert("접속에 실패했습니다. 다시 시도해주세요.");
+      }
+    });
+  })
+</script>
 
   <script>
       document.addEventListener('DOMContentLoaded', function() {

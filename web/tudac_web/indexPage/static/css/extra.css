@@ -1,5 +1,5 @@
 .region_name_f{
-    border:5px dotted rgb(92,120,147);
+    /* border:5px dotted rgb(147, 92, 92); */
     font-size: 30px;
     height: 300px;
     padding-top: 50px;
@@ -38,5 +38,55 @@
 }
 
 .map_b_lo{
-    /* border:5px dotted rgb(0, 255, 0); */
+    
+    padding:50px;
+}
+
+/* when */
+
+.when_main{
+    width: 800px;
+    /* border:5px dotted rgb(0, 0, 255); */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.when_p1{
+    /* border:5px dotted rgb(255, 0, 0); */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 200px;
+    /* margin-top: 150px; */
+}
+
+.when_p2{
+    /* border:5px dotted rgb(255, 0, 0); */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* margin-bottom: 150px; */
+}
+
+.when_p2 div{
+    font-size: 20px;
+}
+
+.time1{
+    margin: 30px;
+}
+.time1 p{
+    display:inline;
+
+}
+
+.when_i{
+    margin-bottom: 100px;
 }
