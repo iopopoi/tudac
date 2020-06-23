@@ -12,6 +12,6 @@ urlpatterns = [
     #test, after delete
     path('test/',views.test, name="test"),
     path('mapChange/',views.mapChange,name='mapChange'),
-    path('timeChange/',views.timeChange,name="timeChange"),
-    path('boringChange/',views.boringChange,name="boringChange")
+    path('boringChange/',views.boringChange,name="boringChange"),
+    path('time/',views.time,name="time"),
 ]

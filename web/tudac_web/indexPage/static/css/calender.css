@@ -1,0 +1,110 @@
+.calender_box{
+    position: relative;
+    display:flex;
+    width: 1000px;
+    height:550px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background-color: #fff;
+    /* 아래는 스크롤 되는게 보기싫어서 일단 적어둠. 지워도 됨. */
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+.calender_today{
+    position:relative;
+    width:400px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    background-color: rgb(180, 203, 211);
+    cursor: grab;
+}
+.J_center{
+    position: relative;
+    text-align:center;
+}
+
+.today_box{
+    position:relative;
+    top:50%;
+    transform: translate(0,-50%);
+}
+.today_wday{
+    font-size: 60px;
+}
+.today_day{
+    color:#333333;
+    font-size: 100px;
+}
+
+.click_there{
+    font-size:30px;
+}
+.calender_total{
+    width:600px;
+}
+.calender_top{
+    height:168px;
+    padding-top:40px;
+}
+
+.calender_year{
+    text-align: center;
+    font-size:70px;
+}
+.crow{
+    display:flex;
+    flex-direction: row;
+    position:relative;
+    left:58%;
+    transform: translate(-50%,0%);
+}
+
+.ccmn{
+    text-align:center;
+    width:72px;
+    height:58px;
+    color:#cccccc;
+    font-size:28px;
+
+}
+
+.cmn_main{
+    color:rgb(133, 162, 172);
+    font-size:40px;
+    margin-bottom:12px;
+}
+
+.mobile_calender{
+    display:none ;
+}
+
+@media (max-width:1200px){
+    .calender_box{
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width:768px){
+    .calender_box{
+        transform: scale(0.6);
+    }
+}
+
+@media(max-width:576px){
+    .calender_box{
+        width:400px;
+        transform:scale(0.8);
+    }
+    .calender_today{
+        width:350px;
+    }
+    .calender_total{
+        width:50px;
+        overflow:hidden;
+        visibility: hidden;
+    }
+    .mobile_calender{
+        display:block;
+    }
+}
+

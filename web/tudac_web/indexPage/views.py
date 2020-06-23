@@ -11,7 +11,7 @@ from django.http import HttpResponse
 from .models import Map_DB
 from .models import Boring_DB
 import random
-import time
+import time, datetime
 import json
 
 def index(request):
@@ -43,19 +43,74 @@ def mapChange(request):
     print(index,context["Region"],context["Name"],context["Lat"],context["Lng"])
     return HttpResponse(json.dumps(context), content_type="application/json")
 
+
 @require_POST
-def timeChange(request):
-    now = time.time()
-    now += random.randrange(2500000,43720001)
-    now = time.localtime(now)
-    wday = ["월","화","수","목","금","토","일"]
-    year = str(now.tm_year); month=str(now.tm_mon); day=str(now.tm_mday)
-    if(len(year)==1): year="0"+year
-    if(len(month)==1): month="0"+month
-    if(len(day)==1): day="0"+day
-    context={'Year':year,"Month":month,"Day":day,"Wday":wday[now.tm_wday]}
+def time(request):
+    def maxday(year, month):
+        if(month==1 or month==3 or month==5 or month==7 or month==8 or month==10 or month==12): return 31
+        if(month==4 or month==6 or month==9 or month==11): return 30
+        if((year%4==0)and(year%100!=0) or year%400==0): return 29
+        else: return 28
+    def before(year,month):
+        month -= 1
+        if month==0:
+            year-=1;month=12
+        return year,month 
+    def defini(year,month,day):
+        while(month>12):
+            month = month-12
+            year += 1
+        while(day>maxday(year,month)):
+            day -= maxday(year,month)
+            month += 1
+            if(month>12):
+                year +=1
+                month=1
+        return year,month,day
+
+    now_day = datetime.datetime.utcnow()+datetime.timedelta(hours=9)
+    year = now_day.year
+    month = now_day.month
+    day = now_day.day
+    if(request.POST['first'] == "false"):
+        print("this!\n\n\n\n\n")
+        year = random.randrange(year,year+30)
+        month = month+random.randrange(1,12)
+        day = day+random.randrange(1,31)
+    year,month,day = defini(year,month,day)
+    today = datetime.date(year,month,day)
+    calender = [[],[],[],[],[]]
+    for i in range(5): 
+        for j in range(7): calender[i].append(0)
+
+    firstday = datetime.date(today.year,today.month,1)
+    firstwd = (firstday.weekday()+1)%7
+    x_position=0; y_position=0
+    now=1;x=firstwd; y=0; maxd = maxday(firstday.year,firstday.month)
+    while(y<5):
+        calender[y][x]=str(now)
+        if(now==today.day):
+            x_position=x 
+            y_position=y
+        now+=1
+        if(int(calender[y][x])>maxd):
+            calender[y][x]=str(int(calender[y][x])%maxd)
+        x+=1
+        if(x==7):
+            x=0; y+=1
+    x=firstwd-1;now=0;by,bm=before(firstday.year,firstday.month)
+    while(x>=0):
+        calender[0][x]=str(maxday(by,bm)+now)
+        x-=1;now-=1
+    
+    for i in range(5):
+        for j in range(7):
+            if(len(calender[i][j])==1): calender[i][j] = "0"+calender[i][j]
+    wday = ["Mon","Thes","Wednes","Thurs","Fri","Satur","Sun"]
+    context = {'tyear':today.year, 'tmonth':today.month, 'tday':today.day, 'wday':wday[today.weekday()], 'xposition':x_position, 'yposition':y_position, 'calender':calender}
     print(context)
     return HttpResponse(json.dumps(context), content_type="application/json")
+
 
 @require_POST
 @csrf_exempt
