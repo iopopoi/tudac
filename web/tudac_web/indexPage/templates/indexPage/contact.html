@@ -109,7 +109,6 @@
       </div>
     </div>
 
-    
     <div class="site-section">
       <div class="container">
         <div class="boring_main">
@@ -124,7 +123,7 @@
           </div>
 
           <div class="boring_i">
-            <img src="../static/images/loding.gif" alt="" class="img-fluid" >
+            <img src="../static/images/loding.gif" alt="" class="img-fluid" style="z-index: 100;">
           </div>
           <div class="boring_b">
             <div class="boring_who"></div>
@@ -248,33 +247,42 @@
       }
     }
   }, true);
+
+  function fullbat(){
+    $('.img-fluid').animate({
+      transform: scale(3)
+    }, 1000);
+  }
   
-
-  $('#input_minus').click(function(){
-    if(array_size>1){
-      $('#input_array'+array_size).remove();
-      array_size-=1;
-    }
-  });
-
-
   $('.boring_button').click(function(){
-    input_array=""
-    for(var i=0; i<array_size; i++){
-      input_array+=$('.names').eq(i).val()+',';
-    }
-    $.ajax({
-      url:"{% url 'indexPage:boringChange' %}", 
-      dataType:'json',
-      type:'POST',
-      data:{'name':input_array},
-      success:function(result){
-        $('.boring_who').text(result.name);
-        $('.boring_what').text(result.do);
-      },
-      error: function(request, status, error){
-        alert("접속에 실패했습니다. 다시 시도해주세요.");
-      },
+    $('.boring_i').animate({
+      width:'100%'
+    },1000,
+    function(){
+      setTimeout(function(){
+        $('.boring_i').animate({
+        width:'0%'
+        },500,function(){
+          input_array=""
+          for(var i=0; i<array_size; i++){
+            input_array+=$('.names').eq(i).val()+',';
+          }
+          $.ajax({
+            url:"{% url 'indexPage:boringChange' %}", 
+            dataType:'json',
+            type:'POST',
+            data:{'name':input_array},
+            success:function(result){
+              $('.boring_who').text(result.name);
+              $('.boring_what').text(result.do);
+            },
+            error: function(request, status, error){
+              alert("접속에 실패했습니다. 다시 시도해주세요.");
+            },
+          });
+        });
+      },2000);
+
     });
   });
 </script>

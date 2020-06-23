@@ -115,7 +115,8 @@
 }
 
 .boring_i{
-    border:5px dotted rgb(255, 0, 0);
+    /* border:5px dotted rgb(255, 0, 0); */
+    width:0%;
 }
 
 .boring_b{
