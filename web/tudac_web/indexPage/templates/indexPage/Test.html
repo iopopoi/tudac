@@ -1,3 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+    <ul id="input_list">
+      <li><input type="text" class="names"/></li>
+    </ul>
+    
+    <input type="submit" value="butt" id="boring_butt"/>
+    <button id="input_plus">+</button>
+    <button id="input_minus">-</button>
+  </body>
+  <script>
+    var array_size = 1;
+    $('#input_plus').click(function(){
+      $('#input_list').append("<li><input type='text' class='names'/></li>");
+    });
+
+    $('#input_minus').click(function(){
+      
+    })
+    $('#boring_butt').click(function(){
+      alert($('.names').eq('2').val())
+      $.ajax({
+        url:"{% url 'indexPage:boringChange' %}", 
+        dataType:'json',
+        type:'POST',
+        data:{'name':$('.names').val()},
+        success:function(result){
+          // alert(result['name']);
+        },
+        error: function(request, status, error){
+          alert("접속에 실패했습니다. 다시 시도해주세요.");
+        },
+      });
+    });
+  </script>
+</html>
+
 
 
 <!-- <!DOCTYPE html>
