@@ -2,21 +2,63 @@
 <html>
   <head>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <style>
+      #input_div{
+        display:flex;
+      }
+      #input_list_box{
+        overflow: scroll;
+        height:60px;
+        width:200px;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        border-top : 1px solid gray;
+        border-bottom: 1px solid gray;
+        margin-right:20px;
+      }
+      #input_list_box::-webkit-scrollbar{
+        display: none;
+      }
+      ul{
+        list-style-type: none;
+        padding-left:0px;
+        margin:0px;
+      }
+      .names{
+        transform: translate(50%,50%) scale(2);
+        margin-bottom:20px;
+        padding:0px;
+        margin-left:10px;
+      }
+    </style>
   </head>
   <body>
-    <ul id="input_list">
-      <li><input type="text" class="names"/></li>
-    </ul>
-    
-    <input type="submit" value="butt" id="boring_butt"/>
-    <button id="input_plus">+</button>
-    <button id="input_minus">-</button>
+    <div id="input_div">
+      <div id="input_list_box">
+        <ul id="input_list">
+          <li><input type="text" class="names" size="16" maxlength="8"/></li>
+        </ul>
+      </div>
+      <div id="input_button">
+        <button id="boring_butt">확인!</button>
+        <button id="input_plus">+</button>
+        <button id="input_minus">-</button>
+      </div>
+    </div>
+
   </body>
+
   <script>
+    $('input[type="text"]').keydown(function(){
+      if(event.keyCode === 13){
+        alert=("enter")
+      }
+    })
     var array_size = 1;
-    $('#input_plus').click(function(){
+
+    var input_plus_fuc = $('#input_plus').click(function(){
       array_size+=1;
-      $('#input_list').append("<li id='input_array"+array_size+"'><input type='text' class='names'/></li>");
+      $('#input_list').append("<li id='input_array"+array_size+"'><input size='16' maxlength='8' type='text' class='names'/></li>");
     });
 
     $('#input_minus').click(function(){
@@ -24,7 +66,9 @@
         $('#input_array'+array_size).remove();
         array_size-=1;
       }
-    })
+    });
+
+
     $('#boring_butt').click(function(){
       input_array=""
       for(var i=0; i<array_size; i++){
