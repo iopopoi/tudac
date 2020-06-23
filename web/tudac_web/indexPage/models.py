@@ -8,3 +8,6 @@ class Map_DB(models.Model):
     latitude = models.DecimalField(max_digits=9, decimal_places=6)
     longitude=models.DecimalField(max_digits=9, decimal_places=6)
     theme=models.CharField(null=True,max_length=128)
+
+class Boring_DB(models.Model):
+    todo = models.CharField(max_length=128)
