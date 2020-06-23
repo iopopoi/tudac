@@ -115,8 +115,12 @@
         <div class="boring_main">
 
           <div class="boring_t">
-            <div class="boring_input"></div>
-            <div class="boring_button"></div>
+            <div class="boring_input">
+              <ul id="input_list">
+                <li><input type="text" class="names" size="10" maxlength="5" id="inputid1"/></li>
+              </ul>
+            </div>
+            <div class="boring_button">이미지버튼이들어가면예쁘겠당</div>
           </div>
 
           <div class="boring_i">
@@ -219,6 +223,61 @@
                 }
             });
     </script>
+
+<script>
+  var array_size = 1;
+
+  document.addEventListener('keydown', function(event) {
+    if (event.keyCode===9 || event.keyCode === 13) {
+      event.preventDefault();
+      var nowid = '#inputid'+array_size;
+      if($(nowid).is(':focus')){
+        array_size+=1;
+        $('#input_list').append("<li id='input_array"+array_size+"'><input size='16' maxlength='8' id='inputid"+array_size+"' type='text' class='names'/></li>");
+        $('#inputid'+array_size).focus();
+      }
+    };
+    if (event.keyCode === 8){
+      var nowid = '#inputid'+array_size;
+      if(array_size>1 && $(nowid).is(':focus')){
+        if($(nowid).val() === ""){
+          $('#input_array'+array_size).remove();
+          array_size-=1;
+          $('#inputid'+array_size).focus();
+        }
+      }
+    }
+  }, true);
+  
+
+  $('#input_minus').click(function(){
+    if(array_size>1){
+      $('#input_array'+array_size).remove();
+      array_size-=1;
+    }
+  });
+
+
+  $('.boring_button').click(function(){
+    input_array=""
+    for(var i=0; i<array_size; i++){
+      input_array+=$('.names').eq(i).val()+',';
+    }
+    $.ajax({
+      url:"{% url 'indexPage:boringChange' %}", 
+      dataType:'json',
+      type:'POST',
+      data:{'name':input_array},
+      success:function(result){
+        $('.boring_who').text(result.name);
+        $('.boring_what').text(result.do);
+      },
+      error: function(request, status, error){
+        alert("접속에 실패했습니다. 다시 시도해주세요.");
+      },
+    });
+  });
+</script>
 
   </body>
 </html>

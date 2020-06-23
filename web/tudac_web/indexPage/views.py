@@ -61,5 +61,5 @@ def timeChange(request):
 def boringChange(request):
     array=request.POST['name'].split(',')[:-1]
     
-    context={'name':random.choice(array),'do':"할 일"}
+    context={'name':random.choice(array),'do':"할 일이 들어갈 자리"}
     return HttpResponse(json.dumps(context), content_type="application/json")

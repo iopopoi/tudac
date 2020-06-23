@@ -132,11 +132,29 @@
     border:5px dotted rgb(0, 0, 0);
     width: 100px;
     height: 100px;
+    overflow:scroll;
 }
+
+.boring_input::-webkit-scrollbar{
+    display: none;
+}
+
+#input_list{
+    list-style-type: none;
+    padding:0px;
+    margin:0px;
+}
+
 .boring_button{
     border:5px dotted rgb(0, 0, 0);
     width: 100px;
     height: 100px;
+
+    /* 아래는 스크롤 되는게 보기싫어서 일단 적어둠. 지워도 됨. */
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
 }
 
 .boring_who{
@@ -144,6 +162,7 @@
     width: 100px;
     height: 100px;
 }
+
 .boring_what{
     border:5px dotted rgb(0, 0, 0);
     width: 100px;
