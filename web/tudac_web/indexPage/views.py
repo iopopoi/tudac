@@ -37,6 +37,7 @@ def test(request):
 def mapChange(request):
     index = random.randrange(1,Map_DB.objects.count()+1)
     liste = Map_DB.objects.get(pk=index)
+    print(liste.theme)
     context = {'Region':liste.region, 'Name':liste.name.replace('#',' '), 'Lat':float(str(liste.latitude)), 'Lng':float(str(liste.longitude)), 'Zoom':17}
     print(index,context["Region"],context["Name"],context["Lat"],context["Lng"])
     return HttpResponse(json.dumps(context), content_type="application/json")
