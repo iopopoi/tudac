@@ -116,10 +116,10 @@
           <div class="boring_t">
             <div class="boring_input">
               <ul id="input_list">
-                <li><input type="text" class="names" size="10" maxlength="5" id="inputid1"/></li>
+                <li><input type="text" class="names " size="30" maxlength="100" id="inputid1" placeholder="한 줄에 하나씩 이름을 입력해 주세요." style="padding:5px 10px 5px 10px"/></li>
               </ul>
             </div>
-            <div class="boring_button">이미지버튼이들어가면예쁘겠당</div>
+            <div class="boring_button">이미지버튼</div>
           </div>
 
           <div class="boring_i">
@@ -232,7 +232,7 @@
       var nowid = '#inputid'+array_size;
       if($(nowid).is(':focus')){
         array_size+=1;
-        $('#input_list').append("<li id='input_array"+array_size+"'><input size='16' maxlength='8' id='inputid"+array_size+"' type='text' class='names'/></li>");
+        $('#input_list').append("<li id='input_array"+array_size+"'><input size='30' maxlength='8' id='inputid"+array_size+"' type='text' class='names boring_input'/></li>");
         $('#inputid'+array_size).focus();
       }
     };
@@ -256,7 +256,7 @@
   
   $('.boring_button').click(function(){
     $('.boring_i').animate({
-      width:'100%'
+      width:'50%'
     },1000,
     function(){
       setTimeout(function(){
