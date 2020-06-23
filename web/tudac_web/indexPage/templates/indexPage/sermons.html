@@ -262,7 +262,7 @@
         dataType: "json", 
         success: function(response){ 
           Map(response.Lat,response.Lng,response.Zoom,true);
-          $(".region").text(response.Region);
+          $(".region").text(response.Region + " - ");
           $(".name").text(response.Name);
         },
         error: function(request, status, error){
