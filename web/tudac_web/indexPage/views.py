@@ -9,6 +9,7 @@ from django.contrib.auth.decorators import login_required
 from django.views.decorators.http import require_POST
 from django.http import HttpResponse
 from .models import Map_DB
+from .models import Boring_DB
 import random
 import time
 import json
@@ -60,6 +61,12 @@ def timeChange(request):
 @csrf_exempt
 def boringChange(request):
     array=request.POST['name'].split(',')[:-1]
-    
-    context={'name':random.choice(array),'do':"할 일이 들어갈 자리"}
+    while("" in array):
+        array.remove("")
+    if(not array):
+        context={'isempty':True, 'name':None,'do':None}
+        return HttpResponse(json.dumps(context), content_type="application/json")
+
+    index = random.randrange(1,Boring_DB.objects.count()+1)
+    context={'isempty':False, 'name':random.choice(array),'do':Boring_DB.objects.get(pk=index).todo}
     return HttpResponse(json.dumps(context), content_type="application/json")

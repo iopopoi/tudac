@@ -273,8 +273,13 @@
             type:'POST',
             data:{'name':input_array},
             success:function(result){
-              $('.boring_who').text(result.name);
-              $('.boring_what').text(result.do);
+              if(result.isempty == true){
+                alert("이름 명단이 비어있습니다!")
+              }
+              else{
+                $('.boring_who').text(result.name);
+                $('.boring_what').text(result.do);
+              }
             },
             error: function(request, status, error){
               alert("접속에 실패했습니다. 다시 시도해주세요.");
