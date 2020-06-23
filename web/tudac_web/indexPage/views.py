@@ -59,5 +59,7 @@ def timeChange(request):
 @require_POST
 @csrf_exempt
 def boringChange(request):
-    context={'name':request.POST['name']}
+    array=request.POST['name'].split(',')[:-1]
+    
+    context={'name':random.choice(array),'do':"할 일"}
     return HttpResponse(json.dumps(context), content_type="application/json")
