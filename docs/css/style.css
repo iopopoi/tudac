@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Hi+Melody&family=Jua&family=Nanum+Gothic&family=Poor+Story&family=Song+Myung&display=swap");
+
+
+*{
+    margin:0px; padding:0px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+header{
+    height:110px;
+    overflow:hidden;
+}
+.logo{
+    height:55px;
+    padding-top:25px;
+    padding-left:35px;
+}
+.logo *{
+    display: inline;
+    font-size: 26px;
+}
+.header_bar{
+    height:25px;
+    padding-top:5px;
+    background-color:#eee;
+}
+.header_bar p{margin-left:20px;}
+section{
+    padding:30px;
+    padding-left:60px;
+    display: flex;
+}
+
+.list{
+    background-color: #eee;
+    border:1px solid #e1e1e1;
+    width:20%;
+    min-width:200px;
+    margin-right:10px;
+    border-radius:5px;
+}
+
+.list ul{
+    padding-top:20px;
+    padding-bottom:20px;
+    list-style-type: none;
+}
+.list li{
+    padding-left:20px;
+    height:31px;
+    padding-top:10px;
+}
+.list li:hover{
+    background-color: #bbb;
+}
+.list li a{
+    text-decoration: none;
+    color: black;
+}
+.content{
+    min-width:800px;
+    border:1px solid black;
+    width:80%;
+    border-radius:5px;
+    height:700px;
+    border:1px solid #e1e1e1;
+}
+
+.if_body{
+    padding:30px;
+}
