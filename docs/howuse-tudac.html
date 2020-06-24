@@ -6,25 +6,80 @@
         <style>
             h1{margin-bottom:20px;}
             h2{margin-bottom:10px;}
-            h3{margin-bottom:10px;}
+            h3{margin-bottom:10px; display:inline-block;}
             h4{line-height:30px;}
-        </style>
+            h5{color:#555;  display:inline;}
+            .preview{
+                overflow:scroll;
+                display:none;
+
+            }
+            .preview img{
+                width:100%;
+            }
+            .quit{
+                position: fixed;
+                right:10px;
+                width:80px;
+                height:80px;
+                font-size: 80px;
+                color:#777;
+                cursor:grab;
+            }
+        </style>    
     </head>
     <body>
-        <h1>투닥 설명서</h1><br>
-        <h3>메인 페이지</h3>
-        <h4>각 기능에 대한 간단한 설명과 개발자의 한마디가 있는 페이지입니다.</h4><br><br>
-        <h3>Where_어디가?</h3>
-        <h4>어디가? 라는 페이지는 여행이 가고 싶을 때 '어디로' 놀러 가야 할지 모를 때 사용하는 공간입니다.<br>
-            전국에 있는 다양한 공간들 중에서 랜덤으로 한 곳을 추천해드립니다.</h4><br><br>
-        <h3>When_언제가?</h3>
-        <h4>언제가? 라는 페이지는 여행이 가고 싶을 때 '언제' 놀러 가야 할지 모를 때 사용하는 공간입니다.<br>
-            오늘 날짜로부터 향후 몇 년까지 랜덤으로 한 날짜를 추천해드립니다.</h4><br><br>
-        <h3>Boring_심심해?</h3>
-        <h4>심심해? 라는 페이지는 여행이 가고 싶을 때 '무엇을' 하러 가야 할지 모를 때 사용하는 공간입니다.<br>
-            여러 할 것들 중에서 랜덤으로 할 만한 일을 추천해드립니다.</h4><br><br>
-        <h3>About_궁금해?</h3>
-        <h4>궁금해? 라는 페이지는 프로젝트에 대한 소개와, 개발자에 대한 정보가 있는 공간입니다.</h4><br><br>
+        <div class="preview"><div class="quit">x</div><img class="all_img" src="../Progress/image/main_all.png"></div>
+        <div class="content">
+            <h1>투닥 설명서</h1><br>
+            <h3>메인 페이지</h3><h5 class="main">&nbsp;&nbsp;이미지로 미리보기</h5><br>
+            <h4>각 기능에 대한 간단한 설명과 개발자의 한마디가 있는 공간입니다.</h4><br><br>
+            <h3>Where_어디가?</h3><h5 class="where">&nbsp;&nbsp;이미지로 미리보기</h5><br>
+            <h4>어디가? 라는 페이지는 여행이 가고 싶을 때 '어디로' 놀러 가야 할지 모를 때 사용하는 공간입니다.<br>
+                전국에 있는 다양한 공간들 중에서 랜덤으로 한 곳을 추천해드립니다.</h4><br><br>
+            <h3>When_언제가?</h3><h5 class="when">&nbsp;&nbsp;이미지로 미리보기</h5><br>
+            <h4>언제가? 라는 페이지는 여행이 가고 싶을 때 '언제' 놀러 가야 할지 모를 때 사용하는 공간입니다.<br>
+                오늘 날짜로부터 향후 몇 년까지 랜덤으로 한 날짜를 추천해드립니다.</h4><br><br>
+            <h3>Boring_심심해?</h3><h5 class="boring">&nbsp;&nbsp;이미지로 미리보기</h5><br>
+            <h4>심심해? 라는 페이지는 여행이 가고 싶을 때 '무엇을' 하러 가야 할지 모를 때 사용하는 공간입니다.<br>
+                여러 할 것들 중에서 랜덤으로 할 만한 일을 추천해드립니다.</h4><br><br>
+            <h3>About_궁금해?</h3><h5 class="about">&nbsp;&nbsp;이미지로 미리보기</h5><br>
+            <h4>궁금해? 라는 페이지는 프로젝트에 대한 소개와, 개발자에 대한 정보가 있는 공간입니다.</h4><br><br>
+        </div>
     </body>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $('.main').click(function(){
+            $('.all_img').attr('src',"../Progress/image/main_all.png");
+            $('.content').css('display','none');
+            $('.preview').css('display','inline');
+        })
+        $('.where').click(function(){
+            $('.all_img').attr('src',"../Progress/image/where_all.png");
+            $('.content').css('display','none');
+            $('.preview').css('display','inline');
+        })
+        $('.when').click(function(){
+            $('.all_img').attr('src',"../Progress/image/when_all.png");
+            $('.content').css('display','none');
+            $('.preview').css('display','inline');
+        })
+        $('.boring').click(function(){
+            $('.all_img').attr('src',"../Progress/image/boring_all.png");
+            $('.content').css('display','none');
+            $('.preview').css('display','inline');
+        })
+        $('.about').click(function(){
+            $('.all_img').attr('src',"../Progress/image/about_all.png");
+            $('.content').css('display','none');
+            $('.preview').css('display','inline');
+        })
+        $('.quit').click(function(){
+            $('.content').css('display','inline');
+            $('.preview').css('display','none');
+        })
+    </script>
 </html>
 
