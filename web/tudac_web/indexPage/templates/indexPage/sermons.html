@@ -130,7 +130,7 @@
                       <p style="display:inline">" </p><p class="region f" style="display:inline"></p><p style="display:inline"></p><p class="name f" style="display:inline"></p><p style="display:inline"> "</p>
                     </div>
                     <div>
-                      <img class="where_img" width="173px" src="../static/images/icon_map/bench.png">
+                      <img class="where_img" width="300px" src="../static/images/dance.gif">
                     </div>
                   </div>
                 </div>
@@ -264,6 +264,7 @@
           $(".region").text(response.Region + " - ");
           $(".name").text(response.Name);
           $(".where_img").attr('src',"../static/images/icon_map/"+response.Image);
+          $(".where_img").attr('width',"178px");
         },
         error: function(request, status, error){
           alert("접속에 실패했습니다. 다시 시도해주세요.");
