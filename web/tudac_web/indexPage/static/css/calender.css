@@ -77,10 +77,12 @@
 .mobile_calender{
     display:none ;
 }
-
+.calender_box{
+    transform: scale(0.7);
+}
 @media (max-width:1200px){
     .calender_box{
-        transform: scale(0.8);
+        transform: scale(0.7);
     }
 }
 
