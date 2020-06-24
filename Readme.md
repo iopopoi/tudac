@@ -1,4 +1,4 @@
-# tudac
+# tudac ![issue badge](https://img.shields.io/github/issues/iopopoi/tudac) ![license badge](https://img.shields.io/github/license/iopopoi/tudac)
 
 ### member
 > 길정민_2019095414_[kjmin622](https://kjmin622.github.io)<br>
