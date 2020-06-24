@@ -29,12 +29,6 @@ def events(request):
 def about(request):    
     return render(request, 'indexPage/about.html')
 
-
-# test, after delete
-
-def test(request):
-    return render(request, 'indexPage/Test.html')
-
 @require_POST
 def mapChange(request):
     index = random.randrange(1,Map_DB.objects.count()+1)

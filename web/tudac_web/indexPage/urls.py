@@ -9,8 +9,6 @@ urlpatterns = [
     path('contact/',views.contact,name='contact'),
     path('events/',views.events,name='events'),
 
-    #test, after delete
-    path('test/',views.test, name="test"),
     path('mapChange/',views.mapChange,name='mapChange'),
     path('boringChange/',views.boringChange,name="boringChange"),
     path('time/',views.time,name="time"),
