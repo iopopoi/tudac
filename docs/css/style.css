@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Hi+Melody&family=Jua&family=Nanum+Gothic&family=Poor+Story&family=Song+Myung&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Source+Code+Pro&display=swap');
 
 *{
     margin:0px; padding:0px;
@@ -24,6 +23,7 @@ header{
     background-color:#eee;
 }
 .header_bar p{margin-left:20px;}
+
 section{
     padding:30px;
     padding-left:60px;
@@ -44,27 +44,54 @@ section{
     padding-bottom:20px;
     list-style-type: none;
 }
+
 .list li{
     padding-left:20px;
     height:31px;
     padding-top:10px;
 }
-.list li:hover{
+.butt:hover{
     background-color: #bbb;
+    cursor:grab;
 }
 .list li a{
     text-decoration: none;
     color: black;
 }
+
+.list ul li div{
+    padding-bottom:8px;
+}
+.list ul li ul{
+    padding:0px;
+}
+
+.list ul li ul li{
+    padding-left:10px;
+    padding-top:4px;
+}
+
 .content{
-    min-width:800px;
-    border:1px solid black;
-    width:80%;
-    border-radius:5px;
-    height:700px;
-    border:1px solid #e1e1e1;
+    width:100%;
+    height:100%;
+    border:0px;
 }
 
 .if_body{
+    width:80%;
+    height:700px;
+    min-width:800px;
     padding:30px;
+    border:1px solid #e1e1e1;
+    border-radius:5px;
+}
+
+.codebox{
+    font-family: 'Source Code Pro', monospace;
+    display: inline-block;
+    padding:10px;
+    padding-left:20px;
+    padding-right:20px;
+    border-radius:5px;
+    background-color: #eee;
 }
