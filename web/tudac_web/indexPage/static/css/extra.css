@@ -130,16 +130,19 @@
     margin: 0px 50px;
     display: flex;
     justify-content: space-around;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
 }
 
 .boring_input::-webkit-scrollbar{
-    display: none;
+    display: none !important;
 }
 
 #input_list{
     list-style-type: none;
     padding:0px;
     margin:0px;
+    z-index:100;
 }
 
 .boring_button{

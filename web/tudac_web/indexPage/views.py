@@ -113,30 +113,46 @@ def time(request):
         x+=1
         if(x==7):
             x=0; y+=1
+
+    # 캘린더에 저번 달 day 적기
     x=firstwd-1;now=0;by,bm=before(firstday.year,firstday.month)
     while(x>=0):
         calender[0][x]=str(maxday(by,bm)+now)
         x-=1;now-=1
     
+    #캘린더 리스트에서 한 자리 day들에 대해 0을 붙여서 2자리로 변경
     for i in range(5):
         for j in range(7):
             if(len(calender[i][j])==1): calender[i][j] = "0"+calender[i][j]
+
+    #웹에 전달할 context 작성
     wday = ["Mon","Thes","Wednes","Thurs","Fri","Satur","Sun"]
     context = {'tyear':today.year, 'tmonth':today.month, 'tday':today.day, 'wday':wday[today.weekday()], 'xposition':x_position, 'yposition':y_position, 'calender':calender}
     print(context)
+
+    #json형식으로 바꿔서 전달
     return HttpResponse(json.dumps(context), content_type="application/json")
 
 
+#이름을 받아와서, 받아온 이름 중 하나 랜덤 선택, 또 boring DB에서 todo 랜덤 선택해서 반환
 @require_POST
 @csrf_exempt
 def boringChange(request):
+    #문자열로 받아온 name 리스트로 바꾸기
     array=request.POST['name'].split(',')[:-1]
+
+    #이름 리스트에서 "" 입력 제거
     while("" in array):
         array.remove("")
+
+    #만약 리스트가 비어있다면, 에러 반환
     if(not array):
         context={'isempty':True, 'name':None,'do':None}
         return HttpResponse(json.dumps(context), content_type="application/json")
 
+    #boringDB에서 랜덤추출
     index = random.randrange(1,Boring_DB.objects.count()+1)
+
+    #웹에 전달할 context 작성해서 json형식으로 바꿔서 전달
     context={'isempty':False, 'name':random.choice(array),'do':Boring_DB.objects.get(pk=index).todo}
     return HttpResponse(json.dumps(context), content_type="application/json")
