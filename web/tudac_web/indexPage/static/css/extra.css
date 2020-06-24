@@ -152,7 +152,7 @@
 }
 
 .boring_button{
-    border:5px dotted rgb(150, 48, 48);
+    /*border:5px dotted rgb(150, 48, 48)*/
     max-width: 300px;
     height: 100px;
     font-size: 20px;
