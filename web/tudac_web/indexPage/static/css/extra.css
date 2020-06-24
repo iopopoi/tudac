@@ -1,3 +1,11 @@
+
+
+/* where_어디가? + when_언제가? + boring_심심해?의 
+   반응형과 디자인 수정을 위한 extra.css */
+
+
+   
+/* where_어디가? */
 .region_name_f{
     /* border:5px dotted rgb(147, 92, 92); */
     font-size: 30px;
@@ -8,11 +16,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
-/* 
-.btn_map{
-    cursor: grab;
-    display: none;
-} */
+
 .row11{
     display: flex;
     flex-direction: row;
@@ -43,27 +47,13 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
-
-.b_map{
-    /* border:5px dotted rgb(0, 0, 255); */
-}
-
-.map_b_location{
-    /* border:5px dotted rgb(255, 0, 0); */
-}
-
-.map_b_lo{
-/*     
-    padding:50px; */
-}
+/* where_어디가? 끝*/
 
 
 
 
-/* when */
 
-
-
+/* when_언제가? */
 .when_all{
     margin: 0px;
     padding: 0px;
@@ -75,7 +65,6 @@
     justify-content: space-around;
 }
 
-
 .when_p1{
     /* border:5px dotted rgb(255, 0, 0); */
     align-items: center;
@@ -86,9 +75,14 @@
     /* margin-top: 150px; */
 }
 
+.about_scale{
+            transform: scale(0.85);
+}
+/* when_언제가? 끝 */
 
-/* boring */
 
+
+/* boring_심심해? */
 .boring_main{
     /* border:5px dotted rgb(255, 0, 0); */
     display: flex;
@@ -164,16 +158,6 @@
     user-select: none !important;
 }
 
-/* .boring_who{
-    margin: 20px;
-    border:5px dotted rgb(0, 0, 0);
-    width: 300px;
-    height: 100px;
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
-} */
-
 .boring_what{
     margin: 20px;
     /* border:5px dotted rgb(0, 0, 0); */
@@ -184,11 +168,4 @@
     justify-content: space-around;
 }
 
-/* 
-.boring_i{
-    width: 800px;
-} */
-
-.about_scale{
-    transform: scale(0.85);
-}
+/* boring_심심해? 끝 */
