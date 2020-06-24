@@ -1,4 +1,11 @@
 # <img src = "src/image/tudac.png" width="20px"> tudac ![issue badge](https://img.shields.io/github/issues/iopopoi/tudac) ![license badge](https://img.shields.io/github/license/iopopoi/tudac)
+tudac 페이지는 여행을 가고 싶을 때, 여가를 즐기고 싶을 때 등등
+사용자의 목적에 맞춰 사용하면 편리한 기능들(어디가?, 언제가?, 심심해?)을 제공하는 것이 목적입니다.
+그리고 사용자가 궁금해할 수 있는 정보도 페이지(궁금해?)에 담아두어 궁금증을 해소할 수 있도록 하였습니다.
+또한 footer와 메뉴바를 사용해 페이지의 접근성에 신경 썼습니다.
+
+# 목차
+
 
 ### member
 > 길정민_2019095414_[kjmin622](https://kjmin622.github.io)<br>
@@ -7,14 +14,6 @@
 > 이현지_2019052251_[huskycat202](https://huskycat1202.github.io)
 <hr><br>
  
-### 프로젝트 소개
-<hr>
-
-tudac
-> tudac 페이지는 여행을 가고 싶을 때, 여가를 즐기고 싶을 때 등등
-사용자의 목적에 맞춰 사용하면 편리한 기능들(어디가?, 언제가?, 심심해?)을 제공하는 것이 목적입니다.
-그리고 사용자가 궁금해할 수 있는 정보도 페이지(궁금해?)에 담아두어 궁금증을 해소할 수 있도록 하였습니다.
-또한 footer와 메뉴바를 사용해 페이지의 접근성에 신경 썼습니다.
 
 main
 > 각 기능에 대한 간단한 설명과 개발자의 한마디가 있는 공간입니다.
