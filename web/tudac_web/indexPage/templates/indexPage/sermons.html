@@ -1,3 +1,8 @@
+
+
+<!-- tudac의 where_어디가? 페이지의 html 파일 -->
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -16,6 +21,7 @@
     <link rel="stylesheet" href="../static/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="../static/css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="../static/css/animate.css">
+    <!-- 추가기능의 반응형과 디자인을 위한 extra.css 파일 -->
     <link rel="stylesheet" href="../static/css/extra.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
@@ -51,7 +57,7 @@
     
     
     <div class="site-navbar-wrap js-site-navbar bg-white">
-      
+       <!--tudac의 메뉴를 구현하고 있는 div-->
       <div class="container">
         <div class="site-navbar bg-light">
           <div class="py-1">
@@ -65,11 +71,11 @@
                     <div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
 
                     <ul class="site-menu js-clone-nav d-none d-lg-block">
-<!-- Sermon: 어디가? -->
+                      <!-- Sermon: 어디가? -->
                       <li><a href="../sermons">Where_어디가?</a></li>
-<!-- Event : 언제가? -->
+                      <!-- Event : 언제가? -->
                       <li><a href="../events">When_언제가?</a></li>
-<!-- Contact : 심심해?-->
+                      <!-- Contact : 심심해?-->
                       <li><a href="../contact">Boring_심심해?</a></li>
                       <li><a href="../about">About_궁금해?</a></li>
                     </ul>
@@ -85,7 +91,7 @@
     <div style="height: 113px;"></div>
     <div class="slide-one-item home-slider owl-carousel">
       
-      
+      <!-- where_어디가?의 상단 slide를 구현하는 div -->
 
       <div class="site-blocks-cover inner-page" style="background-color: rgb(231, 184, 184);" data-aos="fade" data-stellar-background-ratio="0.5">
         <div class="container">
@@ -98,6 +104,8 @@
       </div> 
     </div>
 
+
+    <!-- where_어디가? 의 설명을 답고 있는 div -->
     <div class="site-section">
       <div class="container" style ="text-align:center; font-size: 20px">
         Where_어디가?<br><br>
@@ -109,38 +117,39 @@
     </div>
 
     
-    
+    <!-- where_어디가?의 기능을 답고 있는 div -->
     <div class="site-section" style="padding-top: 0px;">
       <div class="container">
-        <div class="map_b_lo">
-          <div class="map_b_location">
-            <div class="row11">
-              <div id="map" style="width: 500px; height:500px; "></div>
-              <!-- <div class="col-md-12 col-lg-5 mb-5 mb-lg-0 order-1"id="map" style="height:500px;"></div> -->
-              <div >
-                <!-- ////////////// -->
-                <div class="b_info_div" style="height:500px; width: 500px;">
-                  <!--버튼 // 필수요소 : class="map_btn" name="butt" -->
-                  <div class="b_map">
-                    <img class="map_btn  btn_map" name="butt" src="../static/images/where_btn.png" style="cursor: grab;"></img>
-                  </div>
-                  <!--지역 이름과, 장소 이름 태그 상관 없음 필수요소 : 각각 class=region, class=name-->
-                  <div class="region_name_f">
-                    <div>
-                      <p style="display:inline">" </p><p class="region f" style="display:inline"></p><p style="display:inline"></p><p class="name f" style="display:inline"></p><p style="display:inline"> "</p>
-                    </div>
-                    <div>
-                      <img class="where_img" width="300px" src="../static/images/dance.gif">
-                    </div>
-                  </div>
-                </div>
-                <!-- //////////////// -->
-              </div>
-            
-            </div>
 
+        <!-- 반응형 구현을 위한 div -->
+        <div class="row11">
+
+          <!-- naver api를 이요한 지도 삽입 -->
+          <div id="map" style="width: 500px; height:500px; "></div>
+          <div >
+            <!-- 결과와 버튼을 담고 있는 div -->
+            <div class="b_info_div" style="height:500px; width: 500px;">
+
+              <!--버튼 // 필수요소 : class="map_btn" name="butt" -->
+              <div class="b_map">
+                <img class="map_btn  btn_map" name="butt" src="../static/images/where_btn.png" style="cursor: grab;"></img>
+              </div>
+              <!-- 결과를 담는 div -->
+              <!--지역 이름과, 장소 이름 태그 상관 없음 필수요소 : 각각 class=region, class=name-->
+              <div class="region_name_f">
+                <div>
+                  <p style="display:inline">" </p><p class="region f" style="display:inline"></p><p style="display:inline"></p><p class="name f" style="display:inline"></p><p style="display:inline"> "</p>
+                </div>
+                <div>
+                  <img class="where_img" width="300px" src="../static/images/dance.gif">
+                </div>
+              </div>
+            </div>
+            <!-- //////////////// -->
           </div>
+        
         </div>
+
       </div>
     </div>
     
@@ -154,24 +163,25 @@
       </div>
     </div>
 
-    
+    <!-- footer 시작 -->
     <footer class="site-footer">
       <div class="container">
 
         <div class="row">
+          <!-- footer column1 -->
           <div class="col-md-4">
             <h3 class="footer-heading mb-4 text-white">About_궁금해?</h3>
             <p>tudac에 대해 자세히 알고 싶다면?</p>
             <p><a href="about" class="btn btn-primary pill text-white px-4">Read More</a></p>
           </div>
           
-        
+        <!-- footer column2 -->
           <div class="col-md-4">
             <h3 class="footer-heading mb-4 text-white">Support</h3>
                 <p>페이지 오류 사항이나 문의 사항이 있다면, <br>
                   <a href="https://github.com/iopopoi/tudac/issues">여기</a> 에 남겨주세요</p>
           </div>
-    
+        <!-- footer column3 -->
           <div class="col-md-4">
             <h3 class="footer-heading mb-4 text-white">Github Link</h3>
                 <p>
@@ -182,7 +192,7 @@
                 </p>
           </div>
         </div>
-
+      <!-- made by tudac -->
         <div class="row pt-5 mt-5 text-center">
           <div class="col-md-12">
             <p>
@@ -196,6 +206,8 @@
       </div>
     </footer>
   </div>
+
+
   <!-- 제이쿼리 스크립트 추가 -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=ng6xz547b0"></script>
