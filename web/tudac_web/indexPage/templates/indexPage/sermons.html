@@ -98,7 +98,7 @@
       </div> 
     </div>
 
-    <div class="site-section" style="margin-top: 200px;">
+    <div class="site-section">
       <div class="container" style ="text-align:center; font-size: 20px">
         페이지 소개<br>
         Where_어디가?<br><br>
@@ -111,7 +111,7 @@
 
     
     
-    <div class="site-section" style="margin-bottom: 200px;">
+    <div class="site-section">
       <div class="container">
         <div class="map_b_lo">
           <div class="map_b_location">
@@ -131,7 +131,7 @@
                       <p style="display:inline">" </p><p class="region f" style="display:inline"></p><p style="display:inline"></p><p class="name f" style="display:inline"></p><p style="display:inline"> "</p>
                     </div>
                     <div>
-                      <img src="../static/images/bench.png">
+                      <img class="where_img" width="173px" src="../static/images/icon_map/bench.png">
                     </div>
                   </div>
                 </div>
@@ -139,7 +139,7 @@
               </div>
             
             </div>
-            
+
           </div>
         </div>
       </div>
@@ -264,6 +264,7 @@
           Map(response.Lat,response.Lng,response.Zoom,true);
           $(".region").text(response.Region + " - ");
           $(".name").text(response.Name);
+          $(".where_img").attr('src',"../static/images/icon_map/"+response.Image);
         },
         error: function(request, status, error){
           alert("접속에 실패했습니다. 다시 시도해주세요.");
