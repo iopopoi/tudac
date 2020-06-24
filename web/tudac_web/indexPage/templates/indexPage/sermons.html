@@ -245,11 +245,17 @@
           };
           var map = new naver.maps.Map('map', mapOptions);
           if(marker){
-            var marker = new naver.maps.Marker({
-              position: new naver.maps.LatLng(Lat,Lng),
+            var markerOptions = {
+              position:new naver.maps.LatLng(Lat,Lng),
               map:map,
-              animation: naver.maps.Animation.DROP
-            });
+              animation: naver.maps.Animation.DROP,
+              icon:{
+                url:"../static/images/tudac_marker.png",
+                size:new naver.maps.Size(50, 81),
+                scaledSize: new naver.maps.Size(50, 81),
+              }
+            };
+            var marker = new naver.maps.Marker(markerOptions);
           }
       }
     $(".map_btn").click(function(){
