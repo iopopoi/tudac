@@ -80,7 +80,7 @@ tudac 페이지는 여행을 가고 싶을 때, 여가를 즐기고 싶을 때 �
 ### 정보
 > 각 기능에 대한 간단한 설명과 개발자의 한마디가 있는 공간입니다
 ### 실행 영상
->[![예제](http://img.youtube.com/vi/x23PqfNUZNM/0.jpg)](https://youtu.be/x23PqfNUZNM?t=0s)
+>[![예제](https://github.com/iopopoi/tudac/blob/master/Progress/image/main.png)](https://youtu.be/x23PqfNUZNM?t=0s)
 
 
 ## Where_어디가?
@@ -88,7 +88,7 @@ tudac 페이지는 여행을 가고 싶을 때, 여가를 즐기고 싶을 때 �
 >어디가? 라는 페이지는 여행이 가고 싶을 때 '어디로' 놀러 가야 할지 모를 때 사용하는 공간입니다.
 전국에 있는 다양한 공간들 중에서 랜덤으로 한 곳을 추천해드립니다.
 ### 실행 영상
->[![예제](http://img.youtube.com/vi/QaLNEljRlCY/0.jpg)](https://youtu.be/QaLNEljRlCY?t=0s)
+>[![예제](https://github.com/iopopoi/tudac/blob/master/Progress/image/where.png)](https://youtu.be/QaLNEljRlCY?t=0s)
 
 ## When_언제가?
 ### 정보
@@ -96,7 +96,7 @@ tudac 페이지는 여행을 가고 싶을 때, 여가를 즐기고 싶을 때 �
 오늘 날짜로부터 향후 몇 년까지 랜덤으로 한 날짜를 추천해드립니다.
 
 ### 실행 영상
->[![예제](http://img.youtube.com/vi/tcntzNU9pIE/0.jpg)](https://youtu.be/tcntzNU9pIE?t=0s)
+>[![예제](https://github.com/iopopoi/tudac/blob/master/Progress/image/when.png)](https://youtu.be/tcntzNU9pIE?t=0s)
 
 ## Boring_심심해?
 ### 정보
@@ -104,14 +104,14 @@ tudac 페이지는 여행을 가고 싶을 때, 여가를 즐기고 싶을 때 �
 여러 할 것들 중에서 랜덤으로 할 만한 일을 추천해드립니다.
 
 ### 실행 영상
->[![예제](http://img.youtube.com/vi/rofQg3V34Bs/0.jpg)](https://youtu.be/rofQg3V34Bs?t=0s)
+>[![예제](https://github.com/iopopoi/tudac/blob/master/Progress/image/boring.png)](https://youtu.be/Ozq68kywXzc?t=0s)
 
 ## About_궁금해?
 ### 정보
 >궁금해? 라는 페이지는 프로젝트에 대한 소개와, 개발자에 대한 정보가 있는 공간입니다.
 
 ### 실행 영상
->[![예제](http://img.youtube.com/vi/2aQzFrLfDs/0s.jpg)](https://youtu.be/2aQzFrLfDs?t=0s)
+>[![예제](https://github.com/iopopoi/tudac/blob/master/Progress/image/about.png)](https://youtu.be/2aQzFrLfDsM?t=0s)
 
 
 ### 자주 묻는 질문들
@@ -128,7 +128,7 @@ tudac 페이지는 여행을 가고 싶을 때, 여가를 즐기고 싶을 때 �
 ### 기능
 >tudac의 다양한 기능들로 이돌 할수 있도록 이루어진 메뉴입니다.
 #### 실행 영상
->[![예제](http://img.youtube.com/vi/Ah2fTCoFAEE/0.jpg)](https://youtu.be/Ah2fTCoFAEE?t=0s)
+>[![예제](https://github.com/iopopoi/tudac/blob/master/Progress/image/main.png)](https://youtu.be/Ah2fTCoFAEE?t=0s)
 
 ## footer
 #### About tudac
