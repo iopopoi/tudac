@@ -4,7 +4,6 @@ tudac 페이지는 여행을 가고 싶을 때, 여가를 즐기고 싶을 때 �
 그리고 사용자가 궁금해할 수 있는 정보도 페이지(궁금해?)에 담아두어 궁금증을 해소할 수 있도록 하였습니다.
 또한 footer와 메뉴바를 사용해 페이지의 접근성에 신경 썼습니다.
 
-Project 진행_[wiki](https://github.com/iopopoi/tudac/wiki)
 
 # 목차
 
@@ -14,19 +13,19 @@ Project 진행_[wiki](https://github.com/iopopoi/tudac/wiki)
 
 - [구성 및 설명](#구성-및-설명)
     - [Main](#Main)
-        <!-- - [정보](#정보) --><iframe width="640" height="360" src="https://youtu.be/x23PqfNUZNM" frameborder="0" gesture="media" allowfullscreen=""></iframe>
+        <!-- - [정보](#정보) -->
     - [Where_어디가?](#Where_어디가?)
         <!-- - [정보](#정보)
-        - [실행 영상](#실행-영상) --><iframe width="640" height="360" src="https://youtu.be/QaLNEljRlCY" frameborder="0" gesture="media" allowfullscreen=""></iframe>
+        - [실행 영상](#실행-영상) -->
     - [When_언제가?](#When_언제?)
         <!-- - [정보](#정보)
-        - [실행 영상](#실행-영상) --><iframe width="640" height="360" src="https://youtu.be/tcntzNU9pIE" frameborder="0" gesture="media" allowfullscreen=""></iframe>
+        - [실행 영상](#실행-영상) -->
     - [Boring_심심해?](#Boring_심심해?)
         <!-- - [정보](#정보)
-        - [실행 영상](#실행-영상) --><iframe width="640" height="360" src="https://youtu.be/rofQg3V34Bs" frameborder="0" gesture="media" allowfullscreen=""></iframe>
+        - [실행 영상](#실행-영상) -->
     - [About_궁금해?](#About_궁금해?)
         <!-- - [정보](#정보)
-        - [실행 영상](#실행-영상) --><iframe width="640" height="360" src="https://youtu.be/2aQzFrLfDsM" frameborder="0" gesture="media" allowfullscreen=""></iframe>
+        - [실행 영상](#실행-영상) -->
         - [자주 묻는 질문들](#자주-묻는-질문들)
             - [tudac인 이유](#tudac인-이유)
             - [tudac의 icon 만들어진 배경](#tudac의-icon-만들어진-배경)
@@ -39,7 +38,7 @@ Project 진행_[wiki](https://github.com/iopopoi/tudac/wiki)
             - [이현지](#이현지) -->
     - [상단 메뉴](#상단-메뉴)
         <!-- - [기능](#기능)
-            - [실행 영상](#실행-영상) --><iframe width="640" height="360" src="https://youtu.be/Ah2fTCoFAEE" frameborder="0" gesture="media" allowfullscreen=""></iframe>
+            - [실행 영상](#실행-영상) -->
     - [footer](#footer)
         <!-- - [About tudac](#About-tudac)
         - [Support](#Support)
@@ -81,14 +80,15 @@ Project 진행_[wiki](https://github.com/iopopoi/tudac/wiki)
 ### 정보
 > 각 기능에 대한 간단한 설명과 개발자의 한마디가 있는 공간입니다
 ### 실행 영상
-> main기능 실행 유툽
+>[![예제](http://img.youtube.com/vi/x23PqfNUZNM/0.jpg)](https://youtu.be/x23PqfNUZNM?t=0s) 
+
 
 ## Where_어디가?
 ### 정보
 >어디가? 라는 페이지는 여행이 가고 싶을 때 '어디로' 놀러 가야 할지 모를 때 사용하는 공간입니다.
 전국에 있는 다양한 공간들 중에서 랜덤으로 한 곳을 추천해드립니다.
 ### 실행 영상
-> 어디가? 기능 실행 유툽
+>[![예제](http://img.youtube.com/vi/QaLNEljRlCY/0.jpg)](https://youtu.be/QaLNEljRlCY?t=0s)
 
 ## When_언제가?
 ### 정보
@@ -96,19 +96,23 @@ Project 진행_[wiki](https://github.com/iopopoi/tudac/wiki)
 오늘 날짜로부터 향후 몇 년까지 랜덤으로 한 날짜를 추천해드립니다.
 
 ### 실행 영상
-> 언제가? 기능 실행 유툽
-.
+>[![예제](http://img.youtube.com/vi/tcntzNU9pIE/0.jpg)](https://youtu.be/tcntzNU9pIE?t=0s)
+
 ## Boring_심심해?
 ### 정보
 >심심해? 라는 패이지는 여행이 가고 싶을 때 '무엇을' 하러 가야 할지 모를 때 사용하는 공간입니다.
 여러 할 것들 중에서 랜덤으로 할 만한 일을 추천해드립니다.
 
 ### 실행 영상
-> 어디가? 기능 실행 유툽
+>[![예제](http://img.youtube.com/vi/rofQg3V34Bs/0.jpg)](https://youtu.be/rofQg3V34Bs?t=0s)
 
-## About_어디가?
+## About_궁금해?
 ### 정보
 >궁금해? 라는 페이지는 프로젝트에 대한 소개와, 개발자에 대한 정보가 있는 공간입니다.
+
+### 실행 영상
+>[![예제](http://img.youtube.com/vi/2aQzFrLfDs/0.jpg)](https://youtu.be/2aQzFrLfDs?t=0s)
+
 
 ### 자주 묻는 질문들
 > 궁금해 할만한 질문과 그에 따른 답변 제공합니다.
@@ -124,7 +128,7 @@ Project 진행_[wiki](https://github.com/iopopoi/tudac/wiki)
 ### 기능
 >tudac의 다양한 기능들로 이돌 할수 있도록 이루어진 메뉴입니다.
 #### 실행 영상
->영상 영상 영상 영상 영상 영상 영상 영상 영상 영상 영상 영상 
+>[![예제](http://img.youtube.com/vi/Ah2fTCoFAEE/0.jpg)](https://youtu.be/Ah2fTCoFAEE?t=0s)
 
 ## footer
 #### About tudac
@@ -162,7 +166,7 @@ Project 진행_[wiki](https://github.com/iopopoi/tudac/wiki)
 ## close issue
 
 # Wiki
-> 링크 제공
+> Project 진행_[wiki](https://github.com/iopopoi/tudac/wiki)
 ## 정보
 
 # Thanks to
