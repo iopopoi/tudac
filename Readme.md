@@ -137,11 +137,18 @@ tudac 페이지는 여행을 가고 싶을 때, 여가를 즐기고 싶을 때 �
 
 
 # 실행 방법
-    1. 파이썬 가상환경 구축
-    2. django 설치
-    3. git clone
-    4. 가상환경 실행
-    5. 서버 실행(localhost:8000)
+## 가상환경 구축
+> python 3.8.0를 기준으로 합니다.
+### 윈도우<br>
+> ```python3 -m venv [경로/이름]```<br>```[경로/이름]/Scripts/activate.bat 실행```
+### MacOS/Linux<br>
+> ```python3 -m venv [경로/이름]```<br>```source [경로/이름]/bin/activate```
+## django 설치
+> ```pip3 install django```
+## git clone
+> ```git clone git@github.com:iopopoi/tudac```<br>만약 SSH키가 없다면,<br>```git clone https://github.com/iopopoi/tudac```<br>
+## 서버 실행
+> manage.py가 있는 폴더(tudac/web/tudac_web)에서<br>```python3 manage.py runserver [포트]```<br>[포트]는 옵션이고, 입력하지 않을 시 8000으로 열립니다.<br>서버를 연 뒤, 웹 클라이언트 주소창에서 ```localhost:포트```로 투닥에 접속할 수 있습니다.
 
 # 버전 확인
 ### ▷ [v1.0.0](https://github.com/iopopoi/tudac/releases/tag/v1.0.0) (2020.6.24 PM 10:04)
