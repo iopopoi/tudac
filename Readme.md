@@ -14,18 +14,19 @@ Project 진행_[wiki](https://github.com/iopopoi/tudac/wiki)
 
 - [구성 및 설명](#구성-및-설명)
     - [Main](#Main)
-        <!-- - [정보](#정보) -->
+        <!-- - [정보](#정보) --><iframe width="640" height="360" src="https://youtu.be/x23PqfNUZNM" frameborder="0" gesture="media" allowfullscreen=""></iframe>
     - [Where_어디가?](#Where_어디가?)
         <!-- - [정보](#정보)
-        - [실행 영상](#실행-영상) -->
+        - [실행 영상](#실행-영상) --><iframe width="640" height="360" src="https://youtu.be/QaLNEljRlCY" frameborder="0" gesture="media" allowfullscreen=""></iframe>
     - [When_언제가?](#When_언제?)
         <!-- - [정보](#정보)
-        - [실행 영상](#실행-영상) -->
-    - [Boring_심심해?](#Boring_어디가?)
+        - [실행 영상](#실행-영상) --><iframe width="640" height="360" src="https://youtu.be/tcntzNU9pIE" frameborder="0" gesture="media" allowfullscreen=""></iframe>
+    - [Boring_심심해?](#Boring_심심해?)
         <!-- - [정보](#정보)
-        - [실행 영상](#실행-영상) -->
+        - [실행 영상](#실행-영상) --><iframe width="640" height="360" src="https://youtu.be/rofQg3V34Bs" frameborder="0" gesture="media" allowfullscreen=""></iframe>
     - [About_궁금해?](#About_궁금해?)
         <!-- - [정보](#정보)
+        - [실행 영상](#실행-영상) --><iframe width="640" height="360" src="https://youtu.be/2aQzFrLfDsM" frameborder="0" gesture="media" allowfullscreen=""></iframe>
         - [자주 묻는 질문들](#자주-묻는-질문들)
             - [tudac인 이유](#tudac인-이유)
             - [tudac의 icon 만들어진 배경](#tudac의-icon-만들어진-배경)
@@ -38,7 +39,7 @@ Project 진행_[wiki](https://github.com/iopopoi/tudac/wiki)
             - [이현지](#이현지) -->
     - [상단 메뉴](#상단-메뉴)
         <!-- - [기능](#기능)
-            - [실행 영상](#실행-영상) -->
+            - [실행 영상](#실행-영상) --><iframe width="640" height="360" src="https://youtu.be/Ah2fTCoFAEE" frameborder="0" gesture="media" allowfullscreen=""></iframe>
     - [footer](#footer)
         <!-- - [About tudac](#About-tudac)
         - [Support](#Support)
