@@ -2,8 +2,8 @@
 
 # <img src = "src/image/tudac.png" width="20px"> tudac ![issue badge](https://img.shields.io/github/issues/iopopoi/tudac) ![license badge](https://img.shields.io/github/license/iopopoi/tudac)
 
-* tudac Page서버: http://kjmin622.pythonanywhere.com/
-* tudac Docs보고서: https://iopopoi.github.io/tudac/docs/
+* tudac Page_서버: http://kjmin622.pythonanywhere.com/
+* tudac Docs_보고서: https://iopopoi.github.io/tudac/docs/
 
 tudac 페이지는 여행을 가고 싶을 때, 여가를 즐기고 싶을 때 등등
 사용자의 목적에 맞춰 사용하면 편리한 기능들(어디가?, 언제가?, 심심해?)을 제공하는 것이 목적입니다.
@@ -80,7 +80,7 @@ tudac 페이지는 여행을 가고 싶을 때, 여가를 즐기고 싶을 때 �
 > 김혜원_2019028313_[iopopoi](https://iopopoi.github.io)<br>
 > 이성민_2019000773_[Lee-SungMin](https://lee-sungmin.github.io)<br>
 > 이현지_2019052251_[huskycat1202](https://huskycat1202.github.io)
-<hr><br>
+<br>
 
 # 구성 및 설명
 ## Main
