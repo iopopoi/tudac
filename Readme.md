@@ -51,7 +51,7 @@ tudac 페이지는 여행을 가고 싶을 때, 여가를 즐기고 싶을 때 �
         - [서버 실행](#서버-실행) -->
 - [버전 확인](#버전-확인)
     - [v1.0.0](###▷-v1.0.0-2020.6.24-PM-10:04)
-    - [v1.0.1](###▶-v1.0.1-2020.6.25-PM-1:02)
+    - [v1.0.1](###▷-v1.0.1-2020.6.25-PM-1:02)
 - [라이센스](#라이센스)
     <!--- [MIT](#MIT)-->
 - [오픈소스](#오픈소스)
@@ -59,7 +59,7 @@ tudac 페이지는 여행을 가고 싶을 때, 여가를 즐기고 싶을 때 �
 - [자료](#자료)
    <!-- - [핀터레스트](#핀터레스트)-->
 - [issue](#issue)
-    - [open issue](###▶-[open-issue])
+    - [open issue](###▷-[open-issue])
     - [closed issue](###▷-[closed-issue])
 - [Wiki](#Wiki)
     <!--- [정보](#정보)-->
@@ -126,7 +126,7 @@ tudac 페이지는 여행을 가고 싶을 때, 여가를 즐기고 싶을 때 �
 
 ## footer
 ### 기능
-<img src = "https://github.com/iopopoi/tudac/blob/master/Progress/image/footer2.png">
+<img src = "https://github.com/iopopoi/tudac/blob/master/Progress/image/readme_footer.png">
 
 - About tudac
 >about_궁금해? 페이지로 이동합니다.
@@ -145,7 +145,7 @@ tudac 페이지는 여행을 가고 싶을 때, 여가를 즐기고 싶을 때 �
 
 # 버전 확인
 ### ▷ [v1.0.0](https://github.com/iopopoi/tudac/releases/tag/v1.0.0) (2020.6.24 PM 10:04)
-### ▶ [v1.0.1](https://github.com/iopopoi/tudac/releases/tag/v1.0.1) (2020.6.25 PM 1:02)
+### ▷ [v1.0.1](https://github.com/iopopoi/tudac/releases/tag/v1.0.1) (2020.6.25 PM 1:02)
 
 # 라이센스
 - [MIT](https://github.com/iopopoi/tudac/blob/master/LICENSE)
@@ -159,7 +159,7 @@ tudac 페이지는 여행을 가고 싶을 때, 여가를 즐기고 싶을 때 �
 - [icooon-mono](https://icooon-mono.com)
 
 # issue
-### ▶ [open issue](https://github.com/iopopoi/tudac/issues?q=is%3Aopen+is%3Aissue)
+### ▷ [open issue](https://github.com/iopopoi/tudac/issues?q=is%3Aopen+is%3Aissue)
 ### ▷ [closed issue](https://github.com/iopopoi/tudac/issues?q=is%3Aissue+is%3Aclosed)
 
 # Wiki
