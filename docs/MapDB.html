@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            h1{margin-bottom:20px;}
+            h2{margin-bottom:10px;}
+            h4{line-height:30px;}
+            .data{
+                border:1px solid #aaa;
+                border-collapse: collapse;
+                display: none;
+            }
+            th{
+                border:1px solid #aaa;
+            }
+            tr td{
+                border:1px solid #aaa;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Map_DB</h1>
+        <img src="../Progress/image/DataBase1.jpeg" width="500px">
+        <h4>어디가? 페이지에서 지도에 랜덤한 지역을 마킹할 때 사용되는 데이터베이스입니다.</h4><br>
+        <div class="database">
+        <div class="btn" style="display:inline-block; width:629px; text-align: center;">데이터베이스 내용 보기</div><br><br>
+        <table class="data">
+            <tr><th width="40px">id</th><th width="70px">resion</th><th width="150px">name</th><th width="120px">latitude</th><th width="120px">longitude</th><th width="120px">theme</th></tr>
+                <tbody>
+                    <tr><td>1</td><td>서울</td><td>경복궁</td><td>37.579631</td><td>126.977043</td><td>antique.png</td></tr>
+                    <tr><td>2</td><td>서울</td><td>N서울타워(남산타워)</td><td>37.551178</td><td>126.988227</td><td>tower.png</td></tr>
+                    <tr><td>3</td><td>서울</td><td>북촌한옥마을</td><td>37.582494</td><td>126.983648</td><td>antique.png</td></tr>
+                    <tr><td>4</td><td>서울</td><td>코엑스</td><td>37.513082</td><td>127.058609</td><td>building.png</td></tr>
+                    <tr><td>5</td><td>서울</td><td>롯데월드</td><td>37.511042</td><td>127.098171</td><td>amusement.png</td></tr>
+                    <tr><td>6</td><td>서울</td><td>홍대</td><td>37.551584</td><td>126.924975</td><td>school.png</td></tr>
+                    <tr><td>7</td><td>서울</td><td>건대</td><td>37.540985</td><td>127.079333</td><td>school.png</td></tr>
+                    <tr><td>8</td><td>서울</td><td>서울 숲</td><td>37.544388</td><td>127.037444</td><td>tree.png</td></tr>
+                    <tr><td>9</td><td>서울</td><td>여의도 한강공원</td><td>37.528426</td><td>126.934301</td><td>river.png</td></tr>
+                    <tr><td>10</td><td>서울</td><td>동대문 디자인 플라자</td><td>37.566771</td><td>127.009513</td><td>shopping.png</td></tr>
+                    <tr><td>11</td><td>부산</td><td>다대포 해수욕장</td><td>35.046865</td><td>128.966201</td><td>water.png</td></tr>
+                    <tr><td>12</td><td>부산</td><td>해상 케이블카</td><td>35.076381</td><td>129.023603</td><td>attraction.png</td></tr>
+                    <tr><td>13</td><td>부산</td><td>아홉산 숲</td><td>35.28712</td><td>129.171505</td><td>tree.png</td></tr>
+                    <tr><td>14</td><td>부산</td><td>감천 문화마을</td><td>35.097401</td><td>129.010591</td><td>antique.png</td></tr>
+                    <tr><td>15</td><td>부산</td><td>오륙도 스카이워크</td><td>35.100704</td><td>129.124574</td><td>attraction.png</td></tr>
+                    <tr><td>16</td><td>대구</td><td>앞산공원 전망대</td><td>35.825322</td><td>128.579415</td><td>tower.png</td></tr>
+                    <tr><td>17</td><td>대구</td><td>서문야시장</td><td>35.868693</td><td>128.580235</td><td>shopping.png</td></tr>
+                    <tr><td>18</td><td>대구</td><td>스파벨리</td><td>35.788051</td><td>128.635442</td><td>water.png</td></tr>
+                    <tr><td>19</td><td>대구</td><td>아르떼 수성랜드</td><td>35.826768</td><td>128.613248</td><td>amusement.png</td></tr>
+                    <tr><td>20</td><td>대구</td><td>봉무공원</td><td>35.920227</td><td>128.649916</td><td>river.png</td></tr>
+                    <tr><td>21</td><td>인천</td><td>계양꽃마루</td><td>37.53554</td><td>126.746696</td><td>tree.png</td></tr>
+                    <tr><td>22</td><td>인천</td><td>송도 센트럴공원</td><td>37.392372</td><td>126.638459</td><td>river.png</td></tr>
+                    <tr><td>23</td><td>인천</td><td>을왕리 해수욕장</td><td>37.447708</td><td>126.372506</td><td>water.png</td></tr>
+                    <tr><td>24</td><td>인천</td><td>마니산</td><td>37.612334</td><td>126.434741</td><td>mount.png</td></tr>
+                    <tr><td>25</td><td>인천</td><td>차이나타운</td><td>37.476414</td><td>126.618192</td><td>china.png</td></tr>
+                    <tr><td>26</td><td>광주</td><td>호수생태원</td><td>35.18558</td><td>127.000097</td><td>tree.png</td></tr>
+                    <tr><td>27</td><td>광주</td><td>국립 광주 박물관</td><td>35.189102</td><td>126.883072</td><td>museum.png</td></tr>
+                    <tr><td>28</td><td>광주</td><td>우치공원</td><td>35.223924</td><td>126.891628</td><td>amusement.png</td></tr>
+                    <tr><td>29</td><td>광주</td><td>양림 역사 문화 마을</td><td>35.140415</td><td>126.915662</td><td>antique.png</td></tr>
+                    <tr><td>30</td><td>광주</td><td>무등산</td><td>35.144289</td><td>126.988994</td><td>mount.png</td></tr>
+                </tbody>
+            </div>
+        </table>
+    </body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+    var close = true;
+    $('.btn').click(function(){
+        if(close==true){
+            close=false;
+            $('.btn').text("데이터베이스 내용 닫기");
+            $('.data').css("display","table");
+        }
+        else{
+            close=true;
+            $('.btn').text("데이터베이스 내용 보기");
+            $('.data').css("display","none");
+        }
+        
+    })
+</script>
+

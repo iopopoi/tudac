@@ -29,8 +29,13 @@
                     <ul>
                         <li class="howuse-server butt"><a>- 서버 열기</a></li>
                         <li class="howuse-tudac butt"><a>- 투닥 설명서</a></li>
-                    </ul>
-                    </li>
+                    </ul></li>
+                    <li class="database" style="height:93px"><div>데이터베이스</div>
+                        <ul>
+                            <li class="database_mapDB butt"><a>- MapDB</a></li>
+                            <li class="database_boringDB butt"><a>- BoringDB</a></li>
+                        </ul></li>
+                    <li class="server butt"><a>서버</a></li>
                     <li class="community butt"><a>커뮤니티 기여방법</a></li>
                     <li class="source butt"><a>소스코드 기여방법</a></li>
                 </ul>
@@ -40,10 +45,14 @@
                     $(".intro").click(function(){$(".content").attr('src','./intro.html');});
                     $(".developer").click(function(){$(".content").attr('src','./developer.html');});
                     $(".license").click(function(){$(".content").attr('src','./LICENSE.html');});
-                    $(".history").click(function(){location.href="https://github.com/iopopoi/tudac/wiki"});
+                    $(".release").click(function(){location.href="https://github.com/iopopoi/tudac/releases";});
+                    $(".history").click(function(){location.href="https://github.com/iopopoi/tudac/wiki";});
                     $(".download").click(function(){$(".content").attr('src','./download.html');});
                     $(".howuse-server").click(function(){$(".content").attr('src','./howuse-server.html');});
                     $(".howuse-tudac").click(function(){$(".content").attr('src','./howuse-tudac.html');});
+                    $(".database_mapDB").click(function(){$(".content").attr('src','./MapDB.html');});
+                    $(".database_boringDB").click(function(){$(".content").attr('src','./BoringDB.html');});
+                    $(".server").click(function(){$(".content").attr('src','./server.html');});
                     $(".community").click(function(){$(".content").attr('src','./community.html');});
                     $(".source").click(function(){$(".content").attr('src','./source.html');});
                 </script>

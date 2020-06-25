@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            h1{margin-bottom:20px;}
+            h2{margin-bottom:10px;}
+            h4{line-height:30px;}
+            .data{
+                margin-left:220px;
+                border:1px solid #aaa;
+                border-collapse: collapse;
+                display: none;
+            }
+            th{
+                border:1px solid #aaa;
+            }
+            tr td{
+                border:1px solid #aaa;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Boring_DB</h1>
+        <img src="../Progress/image/DataBase2.jpeg" width="500px">
+        <h4>심심해? 페이지에서 랜덤한 사람이 할 일을 정해줄 때 사용되는 데이터베이스입니다.</h4><br>
+        <div class="database">
+        <div class="btn" style="display:inline-block; width:629px; text-align: center;">데이터베이스 내용 보기</div><br><br>
+        <table class="data">
+            <tr><th width="40px">id</th><th width="150px">todo</th></tr>
+                <tbody>
+                    <tr><td>1</td><td>달리기</td></tr>
+                    <tr><td>2</td><td>엉덩이로 이름쓰기</td></tr>
+                    <tr><td>3</td><td>노래부르기</td></tr>
+                    <tr><td>4</td><td>춤추기</td></tr>
+                    <tr><td>5</td><td>심부름 하기</td></tr>
+                </tbody>
+            </div>
+        </table>
+    </body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+    var close = true;
+    $('.btn').click(function(){
+        if(close==true){
+            close=false;
+            $('.btn').text("데이터베이스 내용 닫기");
+            $('.data').css("display","table");
+        }
+        else{
+            close=true;
+            $('.btn').text("데이터베이스 내용 보기");
+            $('.data').css("display","none");
+        }
+        
+    })
+</script>
+

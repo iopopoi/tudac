@@ -12,9 +12,6 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 
-# 상위폴더에 있는 password.py 임폴트  PASSWORD 절대 커밋 금지
-import PASSWORD
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -23,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = PASSWORD.getDjangoSecretKey()
+SECRET_KEY = "9f-mc2d(l%2^o=33ew&jg47cn9_7d33rhbhg90veirjzedno@3"
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
