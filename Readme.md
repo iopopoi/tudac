@@ -50,19 +50,19 @@ tudac 페이지는 여행을 가고 싶을 때, 여가를 즐기고 싶을 때 �
         - [가상환경 실행](#가상환경-실행)
         - [서버 실행](#서버-실행) -->
 - [버전 확인](#버전-확인)
-    - [v1.0.0](#v1.0.0)
-    - [v1.0.1](#v1.0.1)
+    - [v1.0.0](###▷-v1.0.0-2020.6.24-PM-10:04)
+    - [v1.0.1](###▶-v1.0.1-2020.6.25-PM-1:02)
 - [라이센스](#라이센스)
-    - [MIT](#MIT)
+    <!--- [MIT](#MIT)-->
 - [오픈소스](#오픈소스)
-    - [부트스트랩](#부트스트랩)
+    <!--- [부트스트랩](#부트스트랩)-->
 - [자료](#자료)
-    - [핀터레스트](#핀터레스트)
+   <!-- - [핀터레스트](#핀터레스트)-->
 - [issue](#issue)
-    - [open issue](#open-issue)
-    - [close issue](#close-issue)
+    - [open issue](###▶-[open-issue])
+    - [closed issue](###▷-[closed-issue])
 - [Wiki](#Wiki)
-        - [정보](#정보)
+    <!--- [정보](#정보)-->
 - [Thanks to](#Thanks-to)
     
 ----------
@@ -72,7 +72,7 @@ tudac 페이지는 여행을 가고 싶을 때, 여가를 즐기고 싶을 때 �
 > 길정민_2019095414_[kjmin622](https://kjmin622.github.io)<br>
 > 김혜원_2019028313_[iopopoi](https://iopopoi.github.io)<br>
 > 이성민_2019000773_[Lee-SungMin](https://lee-sungmin.github.io)<br>
-> 이현지_2019052251_[huskycat202](https://huskycat1202.github.io)
+> 이현지_2019052251_[huskycat1202](https://huskycat1202.github.io)
 <hr><br>
 
 # 구성 및 설명
@@ -108,68 +108,62 @@ tudac 페이지는 여행을 가고 싶을 때, 여가를 즐기고 싶을 때 �
 
 ## About_궁금해?
 ### 정보
->궁금해? 라는 페이지는 프로젝트에 대한 소개와, 개발자에 대한 정보가 있는 공간입니다.
+>궁금해? 라는 페이지는 프로젝트에 대한 소개와 개발자에 대한 정보가 있는 공간입니다.
+- 자주 묻는 질문들
+>궁금해 할만한 질문과 그에 따른 답변을 제공합니다.
+- 개발자 프로필
 
 ### 실행 영상
 >[![예제](https://github.com/iopopoi/tudac/blob/master/Progress/image/about.png)](https://youtu.be/2aQzFrLfDsM?t=0s)
 
 
-### 자주 묻는 질문들
-> 궁금해 할만한 질문과 그에 따른 답변 제공합니다.
-#### tudac인 이유
-#### tudac의 icon 만들어진 배경
-#### 주제 선정 이유
-#### 개발자 이미지&아이콘 의미
-
-### 개발자 프로필
-    about
 
 ## 상단 메뉴
 ### 기능
 >tudac의 다양한 기능들로 이돌 할수 있도록 이루어진 메뉴입니다.
 #### 실행 영상
->[![예제](https://github.com/iopopoi/tudac/blob/master/Progress/image/main.png)](https://youtu.be/Ah2fTCoFAEE?t=0s)
+>[![예제](https://github.com/iopopoi/tudac/blob/master/Progress/image/menu_1.png)](https://youtu.be/Ah2fTCoFAEE?t=0s)
 
 ## footer
-#### About tudac
-> about_궁금해? 페이지로 이동하는 기능인니다.
-#### Support
-> 페이지 오류 사항, 문의 사항 있을 경우 사용하는 가능으로 tudac repository의 issue로 이동하는 기능인니다.
-#### Github Link
-> 개발자 각가의 자기소개 페이지로 이동가능한 기능입니다.
+### 기능
+<img src = "https://github.com/iopopoi/tudac/blob/master/Progress/image/footer2.png">
+
+- About tudac
+>about_궁금해? 페이지로 이동합니다.
+- Support
+>페이지 오류 사항, 문의 사항 있을 경우 사용하는 가능으로 tudac repository의 issue로 이동합니다.
+- Github Link
+>개발자 각가의 자기소개 페이지로 이동합니다.
+
 
 # 실행 방법
-> 설치 방법 및 개발환경 설정
-## 파이썬 가상환경 구축
-## django 설치
-## git clone
-## 가상환경 실행
-## 서버 실행
-> localhost:8000
+    1. 파이썬 가상환경 구축
+    2. django 설치
+    3. git clone
+    4. 가상환경 실행
+    5. 서버 실행(localhost:8000)
 
 # 버전 확인
-## v1.0.0 
-## v1.0.1
+### ▷ [v1.0.0](https://github.com/iopopoi/tudac/releases/tag/v1.0.0) (2020.6.24 PM 10:04)
+### ▶ [v1.0.1](https://github.com/iopopoi/tudac/releases/tag/v1.0.1) (2020.6.25 PM 1:02)
 
 # 라이센스
-## MIT
+- [MIT](https://github.com/iopopoi/tudac/blob/master/LICENSE)
 
 # 오픈소스
-## 부트스트랩
+- [Bootstrap](http://bootstrapk.com/)
 
 # 자료
-## [pinterest](https://www.pinterest.co.kr)
-## [behance](https://www.behance.net)
-## [icooon-mono](https://icooon-mono.com)
+- [pinterest](https://www.pinterest.co.kr)
+- [behance](https://www.behance.net)
+- [icooon-mono](https://icooon-mono.com)
 
 # issue
-> 링크 제공
-## open issue
-## close issue
+### ▶ [open issue](https://github.com/iopopoi/tudac/issues?q=is%3Aopen+is%3Aissue)
+### ▷ [closed issue](https://github.com/iopopoi/tudac/issues?q=is%3Aissue+is%3Aclosed)
 
 # Wiki
-> Project 진행_[wiki](https://github.com/iopopoi/tudac/wiki)
-## 정보
+> [Project Process Wiki](https://github.com/iopopoi/tudac/wiki)
 
 # Thanks to
-> 팀을 제외한 contributer 적으면 될듯
+- 버그 이슈 작성 : [rasauq1122](https://github.com/rasauq1122)
