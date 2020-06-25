@@ -138,11 +138,16 @@
     display: none !important;
 }
 
+.site-navbar-wrap{
+    z-index:100;
+}
+
 #input_list{
+    position:relative;
     list-style-type: none;
     padding:0px;
     margin:0px;
-    z-index:100;
+    z-index:50;
 }
 
 .boring_button{
