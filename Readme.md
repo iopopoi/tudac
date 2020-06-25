@@ -43,26 +43,27 @@ Project 진행_[wiki](https://github.com/iopopoi/tudac/wiki)
         <!-- - [About tudac](#About-tudac)
         - [Support](#Support)
         - [Github Link](#Github-Link) -->
-    - [실행 방법](#실행-방법)
+- [실행 방법](#실행-방법)
         <!-- - [파이썬 가상환경 구축](#파이썬-가상환경-구축)
         - [django 설치](#django-설치)
         - [git clone](#git-clone)
         - [가상환경 실행](#가상환경-실행)
         - [서버 실행](#서버-실행) -->
-    - [버전 확인](#버전-확인)
-        - [v1.0.0](#v1.0.0)
-    - [라이센스](#라이센스)
-        - [MIT](#MIT)
-    - [오픈소스](#오픈소스)
-        - [부트스트랩](#부트스트랩)
-    - [자료](#자료)
-        - [핀터레스트](#핀터레스트)
-    - [issue](#issue)
-        - [open issue](#open-issue)
-        - [close issue](#close-issue)
-    - [Wiki](#Wiki)
+- [버전 확인](#버전-확인)
+    - [v1.0.0](#v1.0.0)
+    - [v1.0.1](#v1.0.1)
+- [라이센스](#라이센스)
+    - [MIT](#MIT)
+- [오픈소스](#오픈소스)
+    - [부트스트랩](#부트스트랩)
+- [자료](#자료)
+    - [핀터레스트](#핀터레스트)
+- [issue](#issue)
+    - [open issue](#open-issue)
+    - [close issue](#close-issue)
+- [Wiki](#Wiki)
         - [정보](#정보)
-    - [Thanks to](#Thanks-to)
+- [Thanks to](#Thanks-to)
     
 ----------
 
@@ -142,7 +143,8 @@ Project 진행_[wiki](https://github.com/iopopoi/tudac/wiki)
 > localhost:8000
 
 # 버전 확인
-## v1.0.0
+## v1.0.0 
+## v1.0.1
 
 # 라이센스
 ## MIT
